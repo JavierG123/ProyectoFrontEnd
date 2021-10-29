@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./ico.ico" type="image/x-icon">
+    <script src="contacto.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <a href="index.html">Javier Gonzalo Gil - Contacto</a>
+            </div>
+
+            <nav> 
+                <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="formulario.html"><i class='bx bx-notepad'></i> Formulario</a>
+                <a href="contacto.html"><i class='bx bxs-contact'></i> Contacto</a>
+            </nav>
+        </header>
+
+        <section class="main">
+            <article>
+                <h2 class="titulo">Habla con nosotros!</h2>
+                <h5>
+                    Aqui vas a conseguir nuestras redes sociales para que nos puedas seguir, contactarnos y 
+                    un pequeno formulario de contacto.
+
+                    Saludos!
+                </h5>
+            </article>
+            <article>
+                <h2 class="titulo">Formulario de Contacto </h2>
+                <p>
+                    <form name="formulariocontacto" onsubmit="return validarFormulario()" method="post">
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" name="nombre" placeholder="Ingresa tu Nombre">
+                            </div>
+                            
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1"></label>
+                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu correo para contactarte">
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea placeholder="Escribe tu mensaje" class="form-control" id="exampleFormControlTextarea1" name="mensaje" rows="3"></textarea>
+                          </div>
+                        <button type="submit" id="btn-enviar" class="btn btn-primary">Enviar!</button>
+                      </form>
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <div class="widget">
+                    <a href="https://www.linkedin.com"><img src="./linkedin.png" alt=""> </a>
+            </div>
+            <div class="widget">
+                    <a href="https://www.twitter.com"><img src="./twitter.png" alt=""></a>
+            </div>
+        </aside>
+        
+        <footer>
+            <section class="links">
+                <a href="index.html">Inicio</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="contacto.html">Contactos</a>
+            </section>
+        </footer>
+
+    </div>
+</body>
+</html>
